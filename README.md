@@ -45,9 +45,8 @@ python3 main.py
 ```
 
 ## Todo
-[ ] Full lobby sniping
-
-[ ] Error handling (it's yucky rn, sorry!)
+- [ ] Full lobby sniping
+- [ ] Error handling (it's yucky rn, sorry!)
 
 ## Disclaimer
 
