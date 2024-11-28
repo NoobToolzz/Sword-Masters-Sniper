@@ -1,2 +1,5 @@
 python-dateutil
 pytz
+rich
+requests
+pathlib
