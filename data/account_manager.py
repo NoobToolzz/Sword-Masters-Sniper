@@ -9,7 +9,7 @@ from pathlib import Path
 class AccountManager:
     def __init__(self, accounts_file="accounts.txt"):
         self.root_dir = Path(__file__).resolve().parent.parent
-        self.accounts_file = self.root_dir / accounts_file
+        self.accounts_file = self.root_dir / "data" / accounts_file
 
     def get_tokens(self):
         tokens = []

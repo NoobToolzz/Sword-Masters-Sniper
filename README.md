@@ -13,7 +13,7 @@ Sword Masters Sniper is a powerful tool designed to help you find trade lobbies 
 
 # Features
 - Create accounts
-- Snipe lobbies
+- Snipe trade lobbies
   - Provides the room ID along with join link
     - Saves to file and prints to console
   - Snipes by a minimum limit of players per lobby
@@ -28,16 +28,17 @@ pip install -r requirements.txt
 
 Next, open `config.json` and set `clients` to your desired amount of minimum players in a lobby (Default is 5).
 
-Place accounts inside of `accounts.txt`. Supported formats are listed below:
+If you want, place accounts inside of `data/accounts.txt`. Supported formats are listed below:
 - Tokens (e.g. `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...`)
 - Account combos (e.g. `username:password`)
+
+**Note:** This step isn't necessary, as the account generation feature places tokens inside `accounts.txt` for you.
 
 ### Example
 ```
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZEEXCEERqweawesTIxODQwwcaWfsJhbmRvbSI6IjQ1YmRkODA4LTIxYjgtNDIzMC1iOGY1LTA3MmEWerdDSwNyIsImlhdCSdecaZE4NH0.aFvdy4EAsE-X...
 bob:supersecretpassword
 ```
-**Note:** The account generation feature will automatically place account tokens in `accounts.txt`.
 
 Start `main.py` and navigate through the menu to begin sniping!
 ```
@@ -46,6 +47,9 @@ python3 main.py
 
 ## Todo
 - [ ] Full lobby sniping
+- [ ] Automatic joining on main account (toggleable)
+  - This will require a Chromium instance within the root folder, which might be auto-extracted depending on implementation. 
+  - Could implement a method to grab your account token via logging in the Chromium instance, instead of you having to capture it yourself.
 - [ ] Error handling (it's yucky rn, sorry!)
 
 ## Disclaimer
